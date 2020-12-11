@@ -39,5 +39,30 @@ function putResults(sResults) {
     });
   }
 
+
+  // Select the button
+let btn1 = document.querySelector(".btn-toggle");
+
+// 
+btn1.addEventListener("click", function() {  
+
+  document.body.classList.remove("dark-theme");
+  btn1.style.cssText +='color: yellow; transform: translate(8px) scale(2,2);'
+  btn2.style.cssText+= 'transform: translate(20px); color:black;';
+
+});
+ 
+let btn2 = document.querySelector(".btn-tog");
+
+
+btn2.addEventListener("click", function() {  
   
+  document.body.classList.add("dark-theme");
+
   
+  btn2.style.cssText +='color: blue; transform: translateX(20px) scale(1.5,1.5);'
+  btn1.style.cssText+= 'transform: translate(0); color:white;';
+   
+
+  
+});
