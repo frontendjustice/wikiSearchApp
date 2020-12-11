@@ -8,14 +8,19 @@
     <title>Wikipedia Search Engine</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="relative h-screen" >
     <main >
-
+        <div class="mt-6">
+            <button class="btn-toggle focus:outline-none"><i class="fas fa-sun "></i></button>
+            <button class="btn-tog focus:outline-none"><i class="fas fa-moon"></i></button>
+        </div>
+        
         <header class=" px-4 search-container">
             <div class="flex sm:flex-col text-center p-2 py-10 justify-center items-center">
-                <img src="./wiki logo.jpg"class= "w-3/12 sm:w-2/12 lg:w-1/12"   alt="Wikipedia Logo">
+                <img src="./wiki-logo.svg"class= " w-3/12 inline-block -ml-8 sm:-ml-0 sm:w-3/12 lg:w-3/12"   alt="Wikipedia Logo">
 
                 <h1 class="text-2xl sm:text-3xl lg:text-4xl sm:tracking-widest lg:tracking-widest">Wiki Search App </h1>
 
@@ -25,7 +30,7 @@
                 <button type="submit" class="focus:outline-none float-left px-2">
                     <i class="fas fa-search "></i>
                 </button>
-                <input type="search" class="search-input inline-block w-9/12 sm:w-10/12 outline-none cursor-text  " placeholder="Type Here">
+                <input type="search" class="search-input bg-transparent inline-block w-9/12 sm:w-10/12 outline-none cursor-text  " placeholder="Type Here">
                 <a href="https://en.wikipedia.org/wiki/Special:Random " target="_blank" class="float-right outline-none px-2">
                     <i class="fas fa-random"></i>
                 </a>
@@ -34,7 +39,7 @@
         </header>
 
         <section class="results  md:max-w-2xl lg:max-w-3xl m-auto"></section>
-        <footer class="static block bottom-0  w-full mt-16 text-center"> MADE with <span class=" text-red-700"><i class="fa fa-heart" aria-hidden="true" ></i></span> by Justice  </footer>
+        <footer class="static block bottom-0  w-full mt-20 text-center"> MADE with <span class=" text-red-700"><i class="fa fa-heart" aria-hidden="true" ></i></span> by Justice  </footer>
 
     </main>
     <script src="./main.js"></script>
