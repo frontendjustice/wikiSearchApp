@@ -1,0 +1,53 @@
+
+  body {
+    --text-color: #222;
+    --bkg-color: #fff;
+    --anchor-color: #0033cc;
+   
+  }
+
+  section{
+    --text-color: #222;
+    --anchor-color:hsl(226, 90%, 12%);
+    
+  }
+
+  section.dark-theme{
+    --text-color: #222;
+    --bkg-color: white;
+    
+    
+  }
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #1b1717;
+    --anchor-color: #809fff;
+  }
+
+  section{
+    color: var(--text-color);
+    background-color: var(--bkg-color);
+    transition: background-color 2s ease-out;
+  }
+
+
+  body {
+    color: var(--text-color);
+    background-color: var(--bkg-color);
+    transition: background-color 2s ease-out;
+  }
+  a {
+    color: var(--anchor-color);
+  }
+
+
+  button{
+    transition:  transform 2s ease-out;
+    
+  }
+
+
+
+
+
+
